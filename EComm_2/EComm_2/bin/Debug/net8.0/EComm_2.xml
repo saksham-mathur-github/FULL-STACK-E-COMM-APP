@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>EComm_2</name>
+    </assembly>
+    <members>
+        <!-- Badly formed XML comment ignored for member "M:EComm_2.Controllers.AdminController.AddUser(EComm_2.Models.User)" -->
+        <!-- Badly formed XML comment ignored for member "M:EComm_2.Controllers.AdminController.AddProduct(EComm_2.Models.Product)" -->
+        <member name="T:EComm_2.Migrations.first">
+            <inheritdoc />
+        </member>
+        <member name="M:EComm_2.Migrations.first.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:EComm_2.Migrations.first.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:EComm_2.Migrations.first.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:EComm_2.Migrations.third">
+            <inheritdoc />
+        </member>
+        <member name="M:EComm_2.Migrations.third.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:EComm_2.Migrations.third.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:EComm_2.Migrations.third.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:EComm_2.Migrations.fourth">
+            <inheritdoc />
+        </member>
+        <member name="M:EComm_2.Migrations.fourth.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:EComm_2.Migrations.fourth.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:EComm_2.Migrations.fourth.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:EComm_2.Migrations.fifth">
+            <inheritdoc />
+        </member>
+        <member name="M:EComm_2.Migrations.fifth.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:EComm_2.Migrations.fifth.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:EComm_2.Migrations.fifth.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>
