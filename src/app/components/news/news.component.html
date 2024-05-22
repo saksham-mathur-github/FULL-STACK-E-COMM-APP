@@ -1,0 +1,12 @@
+<div class="news-container">
+  <h2>Top News Headlines</h2>
+  <input type="text" [(ngModel)]="keyword" placeholder="Enter keyword">
+  <button (click)="searchNews()">Search</button>
+  <div *ngIf="isLoading">Loading news...</div>
+  <div *ngIf="error">Error fetching news: {{ error }}</div>
+  <div class="news-article" *ngFor="let article of newsArticles">
+    <img [src]="article.urlToImage" alt="News article image">
+    <h3><a [href]="article.url" target="_blank">{{ article.title }}</a></h3>
+    <p>{{ article.description }}</p>
+  </div>
+</div>

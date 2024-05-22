@@ -1,0 +1,46 @@
+<!-- signup.component.html -->
+<div class="signup-container">
+  <h2>Sign Up</h2>
+  <form (ngSubmit)="onSubmit()" #signupForm="ngForm">
+     <div class="form-group">
+       <label for="email">Email</label>
+       <input type="email" id="email" [(ngModel)]="user.email" name="email" required>
+     </div>
+     <div class="form-group">
+       <label for="username">Username</label>
+       <input type="text" id="username" [(ngModel)]="user.username" name="username" required>
+     </div>
+     <div class="form-group">
+       <label for="password">Password</label>
+       <input type="password" id="password" [(ngModel)]="user.password" name="password" required>
+     </div>
+     <div class="form-group">
+       <label for="age">Age</label>
+       <input type="number" id="age" [(ngModel)]="user.age" name="age">
+     </div>
+     <div class="form-group">
+       <label for="gender">Gender</label>
+       <input type="text" id="gender" [(ngModel)]="user.gender" name="gender" required>
+     </div>
+     <div class="form-group">
+       <label for="mobile">Mobile</label>
+       <input type="text" id="mobile" [(ngModel)]="user.mobile" name="mobile" required>
+     </div>
+     <div class="form-group">
+       <label for="address">Address</label>
+       <input type="text" id="address" [(ngModel)]="user.address" name="address" required>
+     </div>
+     <div class="form-group">
+       <label for="role">Role</label>
+       <select id="role" [(ngModel)]="user.role" name="role">
+         <option value="User">User</option>
+         <option value="Admin">Admin</option>
+       </select>
+     </div>
+     <button type="submit" [disabled]="!signupForm.form.valid">Sign Up</button>
+  </form>
+ </div>
+ <p class="text-center mt-3">
+  Already using our sevices? <a routerLink="/signin">Click here if already registered</a>
+ </p>
+ 

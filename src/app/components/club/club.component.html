@@ -1,0 +1,33 @@
+<div class="club-container">
+  <button
+    (click)="toggleDropdown()"
+    class="club-dropdown-toggle"
+    [attr.aria-expanded]="dropdownOpen"
+    aria-controls="club-dropdown"
+  >
+    Choose Your Club
+  </button>
+
+  <div
+    id="club-dropdown"
+    class="club-dropdown"
+    *ngIf="dropdownOpen"
+    aria-labelledby="club-dropdown-toggle"
+  >
+    <ul>
+      <li (click)="selectClub('premium')">Premium Club</li>
+      <li (click)="selectClub('medium')">Medium Club</li>
+    </ul>
+  </div>
+
+  <div *ngIf="selectedClub">
+    <h2 class="club-title">{{ selectedClub.name }}</h2>
+    <p>{{ selectedClub.description }}</p>
+    <p>Price: {{ selectedClub.price }}</p>
+    <h3>Benefits:</h3>
+    <ul class="club-benefits">
+      <li *ngFor="let benefit of selectedClub.benefits">{{ benefit }}</li>
+    </ul>
+    <button (click)="sendEmail()">Send Details via Email</button>
+  </div>
+</div>

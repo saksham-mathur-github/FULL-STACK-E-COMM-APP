@@ -1,0 +1,26 @@
+<div class="container">
+  <h1>Products in {{ selectedCategory }}</h1>
+
+  <div class="sort-container">
+    <label for="sort">Sort by:</label>
+    <select (change)="sortProducts($event)" id="sort">
+      <option *ngFor="let option of sortOptions" [value]="option">{{ option }}</option>
+    </select>
+  </div>
+</div>
+
+
+  <div class="row">
+    <div class="col-md-4" *ngFor="let product of products">
+      <div class="card">
+        <img class="card-img-top" [src]="product.imageUrl" alt="{{ product.productName }}">
+        <div class="card-body">
+          <h5 class="card-title">{{ product.productName }}</h5>
+          <p class="card-text">{{ product.description }}</p>
+          <p class="card-text">Price: {{ product.price }}</p>
+          <button class="btn btn-primary" (click)="addToCart(product)">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+

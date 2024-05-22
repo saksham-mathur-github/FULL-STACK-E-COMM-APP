@@ -1,0 +1,10 @@
+/* order.component.css */
+.order-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-image: url('https://img.lovepik.com/background/20211022/large/lovepik-blue-e-commerce-background-image_500643684.jpg'); /* Background image */
+    background-size: cover; /* Cover the entire container */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+}

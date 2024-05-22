@@ -1,0 +1,32 @@
+<div class="order-container" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTU6eA77lr0runhDGOfRA-bnwMkNYhqGyIMmA&s'); background-size: cover; background-position: center;">
+  <h2>Your Order</h2>
+  <div class="order-items">
+     <div *ngFor="let item of cartItems" class="order-item">
+       <img [src]="item.imageUrl" alt="{{ item.productName }}" class="order-item-image">
+       <div class="order-item-details">
+         <h3>{{ item.productName }}</h3>
+         <p>Price: {{ item.price | currency }}</p>
+         <p>Quantity: {{ item.quantity }}</p>
+         <p>Total: {{ item.price * item.quantity | currency }}</p>
+         <button (click)="adjustQuantity(item.productName, item.quantity - 1)">-</button>
+         <input type="number" [(ngModel)]="item.quantity" (change)="adjustQuantity(item.productName, item.quantity)">
+         <button (click)="adjustQuantity(item.productName, item.quantity + 1)">+</button>
+       </div>
+     </div>
+  </div>
+<!-- Confirmation UI -->
+<div *ngIf="showConfirmation" class="confirmation-overlay">
+  <div class="confirmation-box">
+     <p>Do you want to confirm the order?</p>
+     <button (click)="confirmOrder()">Confirm</button>
+     <button (click)="cancelOrder()">Cancel</button>
+  </div>
+ </div>
+
+  <div class="order-summary">
+     <h3>Order Summary</h3>
+     <p>Total: {{ totalValue | currency }}</p>
+     <button (click)="placeOrder()" class="order-button">Place Order</button>
+  </div>
+</div>
+

@@ -1,0 +1,96 @@
+.about-us-container {
+    padding: 2rem;
+    background-image: linear-gradient(to right, #f0f0f0, #e0e0e0 20px, #f0f0f0 40px, #e0e0e0 60px); /* Subtle horizontal stripes */
+    background-size: 80px; /* Adjust for desired stripe width */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vertically centers content within viewport */
+  }
+  
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #333; /* Dark text for better contrast */
+  }
+  
+  .hero img {
+    width: 600px;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .hero-content {
+    max-width: 50%;
+  }
+  
+  .our-story,
+  .our-team,
+  .why-choose-us,
+  .contact-us {
+    margin-top: 4rem;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    padding: 2rem;
+    color: #333; /* Dark text for better readability */
+    border-radius: 5px; /* Rounded corners for a softer look */
+  }
+  
+  .timeline li {
+    margin-bottom: 1rem;
+    color: #333; /* Dark text for better readability */
+  }
+  
+  .team-members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .team-member {
+    width: calc(33% - 1rem);
+    margin-bottom: 2rem;
+    text-align: center;
+    color: #333; /* Dark text for better readability */
+  }
+  
+  .team-member img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%; /* Circular team member images */
+    object-fit: cover;
+  }
+  
+  .team-member p {
+    margin-top: 1rem;
+  }
+  
+  .social-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+  
+  .social-links li {
+    margin-right: 1rem;
+  }
+  
+  .social-links a {
+    color: #333;
+  }
+  
+  .contact-form {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  
+  .contact-form button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  

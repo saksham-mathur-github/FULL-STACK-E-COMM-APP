@@ -1,0 +1,13 @@
+<div class="home-container">
+  <div class="background-image-container">
+    <img *ngIf="currentImageIndex === 0" src="https://picsum.photos/id/1084/1920/1080" alt="Background Image 1" class="background-image">
+    <img *ngIf="currentImageIndex === 1" src="https://picsum.photos/id/218/1920/1080" alt="Background Image 2" class="background-image">
+    <img *ngIf="currentImageIndex === 2" src="https://picsum.photos/id/203/1920/1080" alt="Background Image 3" class="background-image">
+  </div>
+
+  <div class="home-content">
+    <h1>Welcome to Our Premium Service</h1>
+    <p>Experience a world of benefits and exclusive access with our premium membership.</p>
+    <button class="btn btn-primary" (click)="showECommerceInfo()">Learn More</button>
+  </div>
+</div>

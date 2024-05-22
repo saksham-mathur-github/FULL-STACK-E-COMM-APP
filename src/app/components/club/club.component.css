@@ -1,0 +1,66 @@
+/* club.component.css */
+.club-container {
+    text-align: center;
+    margin: 2rem auto;
+    max-width: 500px;
+  }
+  
+  .club-dropdown-toggle {
+    background-color: #f0f0f0;
+    border: none;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+  
+    /* Add accessibility attributes */
+    position: relative;
+    display: inline-block;
+    width: 100%; /* Make toggle fill container width */
+  }
+  
+  .club-dropdown-toggle:after {
+    content: "";
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+  
+    /* Use Font Awesome or a similar icon library for an arrow */
+    /* font-family: FontAwesome;  Assuming you have Font Awesome loaded */
+    /* content: "\f107";  Down arrow icon */
+  }
+  
+  .club-dropdown-toggle[aria-expanded="true"]:after {
+    transform: translateY(-50%) rotate(180deg);
+  }
+  
+  .club-dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    padding: 1rem;
+  }
+  
+  .club-dropdown li {
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+  }
+  
+  .club-dropdown li:hover {
+    background-color: #f0f0f0; /* Highlight on hover */
+  }
+  
+  .club-benefits {
+    list-style: none; /* Remove default bullet points */
+    padding: 0;
+    margin: 0;
+  }
+  
+  .club-benefits li {
+    margin-bottom: 0.5rem;
+  }
+  
